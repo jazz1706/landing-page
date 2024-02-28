@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Cosmetic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay">
+    <!-- Navbar Section Starts -->
+    <header class="header">
+      <div class="logomain">
+        <a href="#"><img src="logo.JFIF" class="logo"></a>
+        <div class="logo-text">Men's Cosmetic</div>
+      </div>
+      <nav class="navbar">
+          <!-- <a href="#discover" class="active">Home</a> -->
+          <a href="#" class="active">About</a>
+          <a href="#" class="active">Shop</a>
+          <a href="#" class="active">Gallery</a>
+          <a href="#contact" class="active">Contact Us</a>
+          <a href="Login/login.html"><button class="btn">Sign In</button></a>
+        </ul>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <div class="image">
+      
+     
+    </div>
+    <!-- Navbar Section Ends -->
+
+    <div class="banner">
+      <div class="slider">
+        <img src="1.jpg" id="slideImg">
+      
+        <div class="overlay">
+          <div class="content">
+            <h1>WELCOME TO MEN'S GROOMING STORE</h1>
+            <h3>Alexa, what's men's cosmetic?<br>
+              Alexa: Something Amazing ,Something Refreshing ,Something Glamourous!
+            </h3>
+          </div>
+        </div>
+      </div>  
+
+  <script>
+    var slideImg = document.getElementById("slideImg");
+
+    var images = new Array(
+      "2.jpeg",
+      "3.jpeg",
+      "1.jpeg"
+    );
+
+    var len = images.length;
+    var i = 0 ;
+
+    function slider(){
+      console.log("yaha tak aaya");
+      if( i > len-1){
+        i = 0 ;
+      }
+      slideImg.src = images[i];
+      i++;
+      setTimeout('slider()',2000);
+    }
+slider();
+  </script>
+</body>
+</html>
